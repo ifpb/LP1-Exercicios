@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demonstração de Formulário com Javascript</title>
+    <script>
+        function somar() {
+            const numero = document.getElementById('numero').value;
+            const numero2 = document.getElementById('numero2').value;
+            const soma = Number(numero) + Number(numero2);
+            const resultado = document.getElementById('resultado');
+            resultado.innerHTML = `<h1>O resultado da soma é: ${soma}</h1>`;
+        }
+    </script>
+</head>
+<body>
+<form>
+    <label for="numero">Número</label>
+    <input name="numero" id="numero" />
+    <label for="numero2">Número2</label>
+    <input name="numero2" id="numero2" />
+    <button type="button" onclick="somar()">Somar</button>
+</form>
+<div id="resultado"></div>
+<table>
+<tr>
+    <td id="valorParcela"></td>
+    <td id="valorFinal"></td>
+</tr>
+</table>
+</body>
+</html>
