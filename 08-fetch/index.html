@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="pokemon.js"></script>
+</head>
+<body onload="carregarPokemon()">
+<h1>Lista de Pokemon</h1>
+<label>Tipo de Pokemon</label>
+<select id="tipos" onchange="filtrar()">
+    <option value="water">Aquático</option>
+    <option value="poison">Venenoso</option>
+    <option value="fire">Fogo</option>
+    <option value="grass">Grama</option>
+    <option value="bug">Inseto</option>
+    <option value="rock">Pedra</option>
+</select>
+<div id="pokemon">
+</div>
+</body>
+</html>
